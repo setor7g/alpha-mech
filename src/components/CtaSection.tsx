@@ -51,7 +51,7 @@ export default function CtaSection() {
               href="mailto:contato@alphamech.com.br"
               className="text-gray-light hover:text-white-soft transition-colors text-sm font-medium underline underline-offset-4 decoration-gray-light/30 hover:decoration-white-soft/50"
             >
-              Ou entre em contato por e-mail: contato@alphamech.com.br
+              Ou entre em contato por e-mail
             </a>
           </div>
         </AnimatedSection>
