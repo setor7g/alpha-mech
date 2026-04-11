@@ -54,7 +54,7 @@ export default function CertSection() {
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-alpha-red/10 text-alpha-red text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-blue-accent/10 text-blue-accent text-sm font-medium mb-6">
               Certificações &amp; Conformidade
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mb-6">
@@ -77,8 +77,8 @@ export default function CertSection() {
                 className="min-w-[260px] md:min-w-0 snap-center bg-white rounded-2xl p-6 border border-gray-100 shadow-sm h-full"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-alpha-red/10 flex items-center justify-center shrink-0">
-                    <svg className="w-6 h-6 text-alpha-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                  <div className="w-11 h-11 rounded-xl bg-navy/5 flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-blue-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                     </svg>
                   </div>

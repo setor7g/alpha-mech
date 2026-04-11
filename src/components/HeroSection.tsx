@@ -111,7 +111,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-alpha-red/10 border border-alpha-red/20 text-alpha-red text-sm font-medium mb-8 tracking-wide">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-cyan-tech/10 border border-cyan-tech/20 text-cyan-tech text-sm font-medium mb-8 tracking-wide">
             Climatização &amp; Refrigeração
           </span>
         </motion.div>

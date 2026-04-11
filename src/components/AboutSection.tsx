@@ -39,11 +39,11 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-alpha-red/10 text-alpha-red text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-blue-accent/10 text-blue-accent text-sm font-medium mb-6">
               Quem Somos
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mb-6">
-              Excelência em Climatização e <span className="text-alpha-red">Refrigeração</span>
+              Excelência em Climatização e Refrigeração
             </h2>
             <p className="text-graphite text-lg leading-relaxed">
               A Alpha Mech é uma empresa especializada em soluções de
@@ -62,7 +62,7 @@ export default function AboutSection() {
               <motion.div
                 whileHover={{ y: -4, boxShadow: "0 20px 40px rgba(10,22,40,0.1)" }}
                 transition={{ duration: 0.3 }}
-                className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm h-full border-t-4 border-t-alpha-red"
+                className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm h-full"
               >
                 <div className="w-14 h-14 rounded-xl bg-cyan-tech/10 text-cyan-tech flex items-center justify-center mb-5">
                   {pillar.icon}
