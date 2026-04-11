@@ -43,15 +43,12 @@ export default function Header() {
       <div className="h-[3px] bg-gradient-to-r from-alpha-red via-alpha-red to-steel" />
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo placeholder */}
-        <a href="#" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-alpha-red/15 border border-alpha-red/25 flex items-center justify-center">
-            <span className="font-outfit font-bold text-alpha-red text-sm">
-              AM
-            </span>
-          </div>
-          <span className="font-outfit font-bold text-xl text-white-soft">
-            Alpha Mech
-          </span>
+        <a href="#" className="block">
+          <img
+            src="/logo-alpha-mech.png"
+            alt="Alpha Mech — Climatização e Refrigeração"
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Desktop nav */}

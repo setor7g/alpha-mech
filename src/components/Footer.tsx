@@ -17,15 +17,12 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             {/* Brand */}
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-alpha-red/15 border border-alpha-red/25 flex items-center justify-center">
-                  <span className="font-outfit font-bold text-alpha-red text-sm">
-                    AM
-                  </span>
-                </div>
-                <span className="font-outfit font-bold text-xl text-white-soft">
-                  Alpha Mech
-                </span>
+              <div className="mb-4">
+                <img
+                  src="/logo-alpha-mech.png"
+                  alt="Alpha Mech — Climatização e Refrigeração"
+                  className="h-10 w-auto"
+                />
               </div>
               <p className="text-gray-light text-sm leading-relaxed max-w-xs">
                 Soluções completas em climatização e refrigeração com excelência
