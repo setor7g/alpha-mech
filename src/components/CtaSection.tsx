@@ -9,76 +9,41 @@ export default function CtaSection() {
       {/* Rich gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-alpha-red via-alpha-red-dark to-navy" />
 
-      {/* Gear pattern overlay — brand identity */}
+      {/* Gear pattern overlay — brand identity (static paths, no runtime math) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <svg
-          className="absolute -right-32 -top-32 w-[500px] h-[500px] opacity-[0.07]"
-          viewBox="0 0 200 200"
+          className="absolute -right-20 -top-20 w-[480px] h-[480px] opacity-[0.07]"
+          viewBox="0 0 100 100"
           fill="none"
         >
+          <circle cx="50" cy="50" r="32" stroke="white" strokeWidth="1.5" />
+          <circle cx="50" cy="50" r="22" stroke="white" strokeWidth="1" />
           <path
-            d="M100 30 L108 30 L110 18 L118 16 L124 26 L132 24 L130 12 L138 8 L146 16 L152 12 L146 2 L154 -2 L164 8 L170 2 L162 -6 L168 -12 L178 -2 L184 -8 L174 -16 L178 -22"
-            stroke="white"
-            strokeWidth="2"
+            d="M50 12 L53 12 L54 8 L56 8 L57 12 L60 13 L62 9 L64 10 L63 14 L66 16 L69 13 L71 15 L68 18 L70 21 L74 19 L75 22 L71 24 L72 27 L76 27 L76 30 L72 31 L72 34 L76 36 L75 39 L71 37 L70 40 L73 43 L71 45 L68 42 L65 44 L67 48 L64 49 L62 45 L59 46 L60 50 L57 50 L56 46 L53 46 L53 50 L50 50 L50 46 L47 46 L46 50 L43 50 L44 46 L41 45 L39 49 L36 48 L38 44 L35 42 L32 45 L30 43 L33 40 L31 37 L27 39 L26 36 L30 34 L30 31 L26 30 L26 27 L30 27 L31 24 L27 22 L28 19 L32 21 L34 18 L31 15 L33 13 L36 16 L39 14 L38 10 L40 9 L42 13 L45 12 L44 8 L46 8 L47 12 Z"
+            fill="white"
           />
-          <circle cx="100" cy="100" r="65" stroke="white" strokeWidth="3" />
-          <circle cx="100" cy="100" r="45" stroke="white" strokeWidth="2" />
-          {/* Gear teeth */}
-          {Array.from({ length: 16 }).map((_, i) => {
-            const angle = (i * 360) / 16;
-            const rad = (angle * Math.PI) / 180;
-            const innerR = 62;
-            const outerR = 78;
-            const halfTooth = 7;
-            const cos1 = Math.cos(((angle - halfTooth) * Math.PI) / 180);
-            const sin1 = Math.sin(((angle - halfTooth) * Math.PI) / 180);
-            const cos2 = Math.cos(((angle + halfTooth) * Math.PI) / 180);
-            const sin2 = Math.sin(((angle + halfTooth) * Math.PI) / 180);
-            return (
-              <path
-                key={i}
-                d={`M${100 + innerR * cos1},${100 + innerR * sin1} L${100 + outerR * cos1},${100 + outerR * sin1} L${100 + outerR * cos2},${100 + outerR * sin2} L${100 + innerR * cos2},${100 + innerR * sin2}`}
-                fill="white"
-              />
-            );
-          })}
         </svg>
 
         <svg
-          className="absolute -left-24 -bottom-24 w-[400px] h-[400px] opacity-[0.05]"
-          viewBox="0 0 200 200"
+          className="absolute -left-16 -bottom-16 w-[380px] h-[380px] opacity-[0.05]"
+          viewBox="0 0 100 100"
           fill="none"
         >
-          <circle cx="100" cy="100" r="65" stroke="white" strokeWidth="3" />
-          <circle cx="100" cy="100" r="45" stroke="white" strokeWidth="2" />
-          {Array.from({ length: 12 }).map((_, i) => {
-            const angle = (i * 360) / 12;
-            const innerR = 62;
-            const outerR = 76;
-            const halfTooth = 9;
-            const cos1 = Math.cos(((angle - halfTooth) * Math.PI) / 180);
-            const sin1 = Math.sin(((angle - halfTooth) * Math.PI) / 180);
-            const cos2 = Math.cos(((angle + halfTooth) * Math.PI) / 180);
-            const sin2 = Math.sin(((angle + halfTooth) * Math.PI) / 180);
-            return (
-              <path
-                key={i}
-                d={`M${100 + innerR * cos1},${100 + innerR * sin1} L${100 + outerR * cos1},${100 + outerR * sin1} L${100 + outerR * cos2},${100 + outerR * sin2} L${100 + innerR * cos2},${100 + innerR * sin2}`}
-                fill="white"
-              />
-            );
-          })}
+          <circle cx="50" cy="50" r="30" stroke="white" strokeWidth="1.5" />
+          <circle cx="50" cy="50" r="20" stroke="white" strokeWidth="1" />
+          <path
+            d="M50 14 L54 14 L55 9 L58 10 L57 15 L61 17 L64 13 L67 15 L64 19 L67 23 L72 22 L73 25 L68 27 L69 31 L74 32 L74 35 L69 35 L68 39 L73 41 L72 44 L67 42 L64 46 L67 50 L64 52 L61 48 L57 50 L58 55 L55 55 L54 50 L50 50 L50 55 L47 55 L46 50 L42 50 L41 55 L38 54 L39 49 L35 47 L32 51 L30 49 L33 45 L30 41 L25 43 L24 40 L29 38 L28 34 L23 33 L23 30 L28 30 L29 26 L24 24 L25 21 L30 23 L33 19 L30 15 L33 13 L36 17 L40 15 L39 10 L42 10 L43 15 L47 14 L46 9 L49 9 Z"
+            fill="white"
+          />
         </svg>
       </div>
 
       {/* Subtle radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Diagonal line accent */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      </div>
+      {/* Border accents */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <AnimatedSection>
