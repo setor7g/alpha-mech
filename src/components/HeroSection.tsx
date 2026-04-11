@@ -103,7 +103,7 @@ export default function HeroSection() {
       <AirflowSVG />
 
       {/* Radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-accent/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-alpha-red/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24">
         <motion.div
@@ -123,7 +123,7 @@ export default function HeroSection() {
           className="font-outfit font-bold text-4xl sm:text-5xl lg:text-6xl text-white-soft leading-tight mb-6"
         >
           Especialistas em Climatização e Refrigeração com{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-accent to-cyan-tech">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-alpha-red to-cyan-tech">
             Segurança, Eficiência
           </span>{" "}
           e Alta Performance
@@ -148,7 +148,7 @@ export default function HeroSection() {
         >
           <a
             href="#contato"
-            className="w-full sm:w-auto bg-blue-accent hover:bg-blue-accent/90 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-blue-accent/25 hover:-translate-y-0.5"
+            className="w-full sm:w-auto bg-alpha-red hover:bg-alpha-red-dark text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-alpha-red/25 hover:-translate-y-0.5"
           >
             Solicitar Orçamento
           </a>

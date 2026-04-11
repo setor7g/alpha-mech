@@ -18,8 +18,8 @@ export default function Footer() {
             {/* Brand */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-blue-accent/20 border border-blue-accent/30 flex items-center justify-center">
-                  <span className="font-outfit font-bold text-blue-accent text-sm">
+                <div className="w-10 h-10 rounded-lg bg-alpha-red/15 border border-alpha-red/25 flex items-center justify-center">
+                  <span className="font-outfit font-bold text-alpha-red text-sm">
                     AM
                   </span>
                 </div>

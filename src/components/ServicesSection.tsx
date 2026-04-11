@@ -65,7 +65,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <section id="servicos" className="relative py-24 lg:py-32 bg-navy">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-tech/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-alpha-red/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
@@ -92,9 +92,9 @@ export default function ServicesSection() {
                   boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
                 }}
                 transition={{ duration: 0.3 }}
-                className="group bg-navy-light rounded-2xl p-8 border border-white/5 hover:border-cyan-tech/30 transition-colors duration-300 h-full"
+                className="group bg-navy-light rounded-2xl p-8 border border-white/5 hover:border-alpha-red/30 transition-colors duration-300 h-full"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-accent/10 text-blue-accent flex items-center justify-center mb-5 group-hover:bg-cyan-tech/10 group-hover:text-cyan-tech transition-colors duration-300">
+                <div className="w-12 h-12 rounded-xl bg-steel/10 text-steel flex items-center justify-center mb-5 group-hover:bg-alpha-red/10 group-hover:text-alpha-red transition-colors duration-300">
                   {service.icon}
                 </div>
                 <h3 className="font-outfit font-semibold text-xl text-white-soft mb-3">

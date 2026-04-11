@@ -42,8 +42,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo placeholder */}
         <a href="#" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-blue-accent/20 border border-blue-accent/30 flex items-center justify-center">
-            <span className="font-outfit font-bold text-blue-accent text-sm">
+          <div className="w-10 h-10 rounded-lg bg-alpha-red/15 border border-alpha-red/25 flex items-center justify-center">
+            <span className="font-outfit font-bold text-alpha-red text-sm">
               AM
             </span>
           </div>
@@ -67,7 +67,7 @@ export default function Header() {
             href="https://wa.me/5511932106778?text=Olá! Gostaria de solicitar um orçamento."
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-accent hover:bg-blue-accent/90 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-accent/25"
+            className="bg-alpha-red hover:bg-alpha-red-dark text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-alpha-red/25"
           >
             Solicitar Orçamento
           </a>
@@ -121,7 +121,7 @@ export default function Header() {
                 href="https://wa.me/5511932106778?text=Olá! Gostaria de solicitar um orçamento."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-accent text-white px-5 py-3 rounded-lg text-center font-semibold mt-2"
+                className="bg-alpha-red text-white px-5 py-3 rounded-lg text-center font-semibold mt-2"
               >
                 Solicitar Orçamento
               </a>

@@ -39,7 +39,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-blue-accent/10 text-blue-accent text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-alpha-red/10 text-alpha-red text-sm font-medium mb-6">
               Quem Somos
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mb-6">
