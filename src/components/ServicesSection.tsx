@@ -74,7 +74,7 @@ export default function ServicesSection() {
               Nossos Serviços
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-white-soft mb-6">
-              Soluções Completas em Climatização
+              Soluções Completas em <span className="text-alpha-red">Climatização</span>
             </h2>
             <p className="text-gray-light text-lg leading-relaxed">
               Atuamos de forma completa na área de climatização e refrigeração,

@@ -7,7 +7,7 @@ export default function CtaSection() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden">
       {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-alpha-red via-alpha-red-dark to-navy" />
+      <div className="absolute inset-0 bg-gradient-to-br from-alpha-red via-alpha-red-dark to-[#1a0a0a]" />
 
       {/* Abstract pattern overlay */}
       <div className="absolute inset-0 opacity-10">

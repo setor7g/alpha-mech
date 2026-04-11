@@ -39,6 +39,8 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
+      {/* Brand accent bar */}
+      <div className="h-[3px] bg-gradient-to-r from-alpha-red via-alpha-red to-steel" />
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo placeholder */}
         <a href="#" className="flex items-center gap-2">

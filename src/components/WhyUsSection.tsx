@@ -72,7 +72,7 @@ export default function WhyUsSection() {
               Diferenciais
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-white-soft mb-6">
-              Por que escolher a Alpha Mech?
+              Por que escolher a <span className="text-alpha-red">Alpha Mech</span>?
             </h2>
           </div>
         </AnimatedSection>
