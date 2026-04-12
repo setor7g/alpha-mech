@@ -5,24 +5,17 @@ import { motion } from "framer-motion";
 
 export default function CtaSection() {
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden bg-navy">
+    <section className="relative py-24 lg:py-32 overflow-hidden">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/bg-cta.png')" }}
+      />
+      {/* Overlay for text contrast */}
+      <div className="absolute inset-0 bg-navy/60" />
+
       {/* Top accent — thin red line (brand touch) */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-alpha-red to-transparent" />
-
-      {/* Subtle grid pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="cta-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#cta-grid)" />
-        </svg>
-      </div>
-
-      {/* Radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-blue-accent/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-alpha-red to-transparent z-10" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <AnimatedSection>
