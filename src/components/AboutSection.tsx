@@ -29,7 +29,7 @@ const pillars = [
       </svg>
     ),
     title: "Responsabilidade Ambiental",
-    description: "Responsabilidade ambiental em cada processo, com práticas sustentáveis e conformidade com o IBAMA.",
+    description: "Compromisso ambiental em cada processo. Utilizamos somente produtos aprovados que não agridem o meio ambiente, com total conformidade com o IBAMA.",
   },
 ];
 

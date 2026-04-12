@@ -47,7 +47,7 @@ export default function Header() {
           <img
             src="/logo-alpha-mech.png"
             alt="Alpha Mech — Climatização e Refrigeração"
-            className="h-10 w-auto"
+            className="h-14 w-auto"
           />
         </a>
 
