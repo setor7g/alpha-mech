@@ -20,7 +20,7 @@ export default function CtaSection() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <AnimatedSection>
           <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-white-soft mb-6 leading-tight">
-            Seu ambiente está climatizado do jeito certo?
+            Seu ambiente está climatizado <br className="hidden sm:block" /> do jeito certo?
           </h2>
           <p className="text-gray-light text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
             Solicite uma avaliação técnica e descubra como melhorar conforto,

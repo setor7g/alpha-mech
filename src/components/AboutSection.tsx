@@ -43,7 +43,7 @@ export default function AboutSection() {
               Climatização
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mb-6">
-              Climatização é controle, saúde e desempenho
+              Climatização é controle, <br className="hidden sm:block" /> saúde e desempenho
             </h2>
             <p className="text-graphite text-lg leading-relaxed">
               A Alpha Mech é uma empresa especializada em soluções de
