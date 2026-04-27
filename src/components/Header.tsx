@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const navLinks = [
-  { label: "Quem Somos", href: "#quem-somos" },
+  { label: "Climatização", href: "#climatizacao" },
   { label: "Serviços", href: "#servicos" },
   { label: "Certificações", href: "#certificacoes" },
   { label: "Contato", href: "#contato" },
@@ -40,14 +41,17 @@ export default function Header() {
       }`}
     >
       {/* Brand accent bar */}
-      <div className="h-[3px] bg-gradient-to-r from-alpha-red via-alpha-red to-steel" />
+      <div className="h-[3px] bg-linear-to-r from-alpha-red via-alpha-red to-steel" />
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo placeholder */}
         <a href="#" className="block">
-          <img
+          <Image
             src="/logo-alpha-mech.png"
             alt="Alpha Mech — Climatização e Refrigeração"
+            width={180}
+            height={56}
             className="h-14 w-auto"
+            priority
           />
         </a>
 

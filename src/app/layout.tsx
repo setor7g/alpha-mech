@@ -15,13 +15,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Alpha Mech — Climatização e Refrigeração | Segurança e Eficiência",
+  title: "Alpha Mech — Climatização Sob Controle | Conforto e Eficiência",
   description:
-    "Soluções completas em climatização e refrigeração para ambientes residenciais, comerciais e industriais. Equipe certificada, conformidade normativa e excelência operacional.",
+    "Climatização para conforto, saúde do ar e performance operacional em ambientes residenciais, comerciais e industriais. Manutenção, instalação, PMOC e conformidade técnica.",
   openGraph: {
-    title: "Alpha Mech — Climatização e Refrigeração",
+    title: "Alpha Mech — Climatização Sob Controle",
     description:
-      "Soluções completas em climatização e refrigeração com alto padrão técnico e excelência operacional.",
+      "Conforto, qualidade do ar e eficiência para manter seus sistemas de climatização no ponto ideal.",
     type: "website",
     locale: "pt_BR",
   },

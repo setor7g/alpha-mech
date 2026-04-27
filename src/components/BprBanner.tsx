@@ -6,7 +6,7 @@ export default function BprBanner() {
   return (
     <section className="relative py-16 lg:py-20 bg-navy overflow-hidden">
       {/* Top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-emerald-500/30 to-transparent" />
 
       <div className="max-w-5xl mx-auto px-6">
         <AnimatedSection>
@@ -34,7 +34,7 @@ export default function BprBanner() {
             <div className="text-center md:text-left flex-1">
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
                 <h3 className="font-outfit font-bold text-2xl text-white-soft">
-                  Empresa Amiga da Natureza
+                  Responsabilidade ambiental comprovada
                 </h3>
                 <span className="inline-block self-start sm:self-auto px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/25 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
                   BPR Certificada
@@ -47,8 +47,8 @@ export default function BprBanner() {
                 </span>{" "}
                 conforme exigências do IBAMA. Utilizamos somente produtos
                 aprovados que não agridem o meio ambiente, garantindo
-                sustentabilidade e conformidade ambiental em todos os nossos
-                serviços.
+                sustentabilidade e conformidade ambiental na operação dos
+                sistemas.
               </p>
             </div>
 

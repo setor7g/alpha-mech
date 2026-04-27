@@ -99,7 +99,7 @@ function AirflowSVG() {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-navy via-navy-light to-graphite">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-navy via-navy-light to-graphite">
       <AirflowSVG />
 
       {/* Radial glow */}
@@ -112,7 +112,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-cyan-tech/10 border border-cyan-tech/20 text-cyan-tech text-sm font-medium mb-8 tracking-wide">
-            Climatização &amp; Refrigeração
+            Climatização sob controle
           </span>
         </motion.div>
 
@@ -122,11 +122,11 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="font-outfit font-bold text-4xl sm:text-5xl lg:text-6xl text-white-soft leading-tight mb-6"
         >
-          Especialistas em Climatização e Refrigeração com{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-alpha-red to-cyan-tech">
-            Segurança, Eficiência
+          Climatização que protege o{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-alpha-red to-cyan-tech">
+            conforto, a saúde do ar
           </span>{" "}
-          e Alta Performance
+          e a performance da sua operação
         </motion.h1>
 
         <motion.p
@@ -135,9 +135,9 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-gray-light text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          Soluções completas para ambientes residenciais, comerciais e
-          industriais com alto padrão técnico, conformidade normativa e
-          excelência operacional.
+          Mantemos ambientes residenciais, comerciais e industriais no ponto
+          ideal com eficiência energética, conformidade técnica e cuidado
+          preventivo para evitar falhas antes que elas virem urgência.
         </motion.p>
 
         <motion.div

@@ -13,6 +13,7 @@ const services = [
     ),
     title: "Manutenção Preventiva",
     description: "Inspeções periódicas, limpeza, avaliação de desempenho e aumento da vida útil dos equipamentos.",
+    category: "operation",
   },
   {
     icon: (
@@ -23,6 +24,7 @@ const services = [
     ),
     title: "Manutenção Corretiva",
     description: "Diagnóstico rápido, reparos emergenciais, substituição de componentes e retorno ágil da operação.",
+    category: "operation",
   },
   {
     icon: (
@@ -32,6 +34,7 @@ const services = [
     ),
     title: "Instalação de Ar-Condicionado",
     description: "Sistemas Split, Cassete, VRF e outros, com execução conforme normas técnicas vigentes.",
+    category: "projects",
   },
   {
     icon: (
@@ -41,6 +44,7 @@ const services = [
     ),
     title: "Soluções Industriais",
     description: "Chillers, câmaras frias, refrigeração industrial e projetos personalizados sob demanda.",
+    category: "projects",
   },
   {
     icon: (
@@ -50,6 +54,7 @@ const services = [
     ),
     title: "PMOC",
     description: "Elaboração e implementação de Plano de Manutenção, Operação e Controle conforme exigências legais.",
+    category: "operation",
   },
   {
     icon: (
@@ -59,13 +64,29 @@ const services = [
     ),
     title: "Qualidade do Ar",
     description: "Higienização completa, controle de fungos, bactérias e impurezas para ambientes mais saudáveis.",
+    category: "operation",
+  },
+];
+
+const serviceGroups = [
+  {
+    key: "operation",
+    title: "Operação e manutenção",
+    description:
+      "Rotinas, diagnósticos e controle para manter sistemas seguros, eficientes e em conformidade.",
+  },
+  {
+    key: "projects",
+    title: "Projetos e instalação",
+    description:
+      "Implantação de novos sistemas e soluções personalizadas para demandas residenciais, comerciais e industriais.",
   },
 ];
 
 export default function ServicesSection() {
   return (
     <section id="servicos" className="relative py-24 lg:py-32 bg-navy">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-tech/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-cyan-tech/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
@@ -74,37 +95,60 @@ export default function ServicesSection() {
               Nossos Serviços
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-white-soft mb-6">
-              Soluções Completas em Climatização
+              Serviços técnicos para conforto contínuo e operação confiável
             </h2>
             <p className="text-gray-light text-lg leading-relaxed">
-              Atuamos de forma completa na área de climatização e refrigeração,
-              atendendo sistemas residenciais, comerciais e industriais.
+              Do cuidado preventivo à implantação de novos sistemas, cada
+              serviço existe para manter temperatura, ar e equipamentos sob
+              controle.
             </p>
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <AnimatedSection key={service.title} delay={index * 0.1}>
-              <motion.div
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
-                }}
-                transition={{ duration: 0.3 }}
-                className="group bg-navy-light rounded-2xl p-8 border border-white/5 hover:border-cyan-tech/30 transition-colors duration-300 h-full"
-              >
-                <div className="w-12 h-12 rounded-xl bg-blue-accent/10 text-blue-accent flex items-center justify-center mb-5 group-hover:bg-cyan-tech/10 group-hover:text-cyan-tech transition-colors duration-300">
-                  {service.icon}
+        <div className="space-y-12">
+          {serviceGroups.map((group, groupIndex) => (
+            <div key={group.key}>
+              <AnimatedSection delay={groupIndex * 0.1}>
+                <div className="mb-6">
+                  <h3 className="font-outfit font-semibold text-2xl text-white-soft mb-2">
+                    {group.title}
+                  </h3>
+                  <p className="text-gray-light leading-relaxed max-w-2xl">
+                    {group.description}
+                  </p>
                 </div>
-                <h3 className="font-outfit font-semibold text-xl text-white-soft mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-light leading-relaxed text-sm">
-                  {service.description}
-                </p>
-              </motion.div>
-            </AnimatedSection>
+              </AnimatedSection>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {services
+                  .filter((service) => service.category === group.key)
+                  .map((service, index) => (
+                    <AnimatedSection
+                      key={service.title}
+                      delay={groupIndex * 0.1 + index * 0.1}
+                    >
+                      <motion.div
+                        whileHover={{
+                          scale: 1.02,
+                          boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
+                        }}
+                        transition={{ duration: 0.3 }}
+                        className="group bg-navy-light rounded-2xl p-8 border border-white/5 hover:border-cyan-tech/30 transition-colors duration-300 h-full"
+                      >
+                        <div className="w-12 h-12 rounded-xl bg-blue-accent/10 text-blue-accent flex items-center justify-center mb-5 group-hover:bg-cyan-tech/10 group-hover:text-cyan-tech transition-colors duration-300">
+                          {service.icon}
+                        </div>
+                        <h4 className="font-outfit font-semibold text-xl text-white-soft mb-3">
+                          {service.title}
+                        </h4>
+                        <p className="text-gray-light leading-relaxed text-sm">
+                          {service.description}
+                        </p>
+                      </motion.div>
+                    </AnimatedSection>
+                  ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

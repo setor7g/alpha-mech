@@ -10,8 +10,8 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
       </svg>
     ),
-    title: "Qualidade",
-    description: "Qualidade na execução dos serviços, utilizando as melhores práticas e tecnologias do mercado.",
+    title: "Conforto Sob Controle",
+    description: "Temperatura estável, umidade equilibrada e ambientes mais agradáveis para quem vive, trabalha ou circula no espaço.",
   },
   {
     icon: (
@@ -19,8 +19,8 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
       </svg>
     ),
-    title: "Segurança",
-    description: "Segurança em todas as operações, com equipe certificada e conformidade normativa rigorosa.",
+    title: "Ar Mais Seguro",
+    description: "Higienização, controle de impurezas e cuidado técnico para reduzir riscos à saúde e melhorar a qualidade do ar interno.",
   },
   {
     icon: (
@@ -28,30 +28,29 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
       </svg>
     ),
-    title: "Responsabilidade Ambiental",
-    description: "Compromisso ambiental em cada processo. Utilizamos somente produtos aprovados que não agridem o meio ambiente, com total conformidade com o IBAMA.",
+    title: "Eficiência e Continuidade",
+    description: "Sistemas bem dimensionados e mantidos consomem menos, duram mais e reduzem paradas inesperadas na operação.",
   },
 ];
 
 export default function AboutSection() {
   return (
-    <section id="quem-somos" className="relative py-24 lg:py-32 bg-white-soft">
+    <section id="climatizacao" className="relative py-24 lg:py-32 bg-white-soft">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full bg-blue-accent/10 text-blue-accent text-sm font-medium mb-6">
-              Quem Somos
+              Climatização
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mb-6">
-              Excelência em Climatização e Refrigeração
+              Climatização é controle, saúde e desempenho
             </h2>
             <p className="text-graphite text-lg leading-relaxed">
               A Alpha Mech é uma empresa especializada em soluções de
-              refrigeração e climatização, oferecendo serviços com alto padrão
-              de qualidade, eficiência e confiabilidade. Atuamos com foco na
-              excelência operacional, garantindo o pleno funcionamento dos
-              sistemas, sempre alinhados às normas técnicas, segurança do
-              trabalho e responsabilidade ambiental.
+              refrigeração e climatização para ambientes residenciais,
+              comerciais e industriais. Atuamos para manter sistemas no ponto
+              ideal de conforto, eficiência e segurança, com alto padrão
+              técnico, conformidade normativa e responsabilidade ambiental.
             </p>
           </div>
         </AnimatedSection>

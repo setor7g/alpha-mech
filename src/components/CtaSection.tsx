@@ -15,16 +15,17 @@ export default function CtaSection() {
       <div className="absolute inset-0 bg-navy/60" />
 
       {/* Top accent — thin red line (brand touch) */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-alpha-red to-transparent z-10" />
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-linear-to-r from-transparent via-alpha-red to-transparent z-10" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <AnimatedSection>
           <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-white-soft mb-6 leading-tight">
-            Pronto para otimizar seus sistemas de climatização?
+            Seu ambiente está climatizado do jeito certo?
           </h2>
           <p className="text-gray-light text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Solicite um orçamento e descubra como podemos otimizar seus sistemas
-            de climatização com segurança e eficiência.
+            Solicite uma avaliação técnica e descubra como melhorar conforto,
+            qualidade do ar, eficiência e segurança dos seus sistemas de
+            climatização.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a

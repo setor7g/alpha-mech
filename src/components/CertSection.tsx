@@ -58,11 +58,12 @@ export default function CertSection() {
               Certificações &amp; Conformidade
             </span>
             <h2 className="font-outfit font-bold text-3xl sm:text-4xl lg:text-5xl text-navy mb-6">
-              Qualidade Técnica Certificada
+              Provas técnicas para uma operação segura
             </h2>
             <p className="text-graphite text-lg leading-relaxed">
-              Atuamos em total conformidade com as normas vigentes, assegurando
-              qualidade técnica e segurança em todos os serviços prestados.
+              Certificações e treinamentos reforçam a conformidade que sustenta
+              cada atendimento, da refrigeração responsável à segurança em
+              campo.
             </p>
           </div>
         </AnimatedSection>

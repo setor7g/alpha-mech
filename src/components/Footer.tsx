@@ -1,7 +1,8 @@
+import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
 
 const navLinks = [
-  { label: "Quem Somos", href: "#quem-somos" },
+  { label: "Climatização", href: "#climatizacao" },
   { label: "Serviços", href: "#servicos" },
   { label: "Certificações", href: "#certificacoes" },
   { label: "Contato", href: "#contato" },
@@ -10,7 +11,7 @@ const navLinks = [
 export default function Footer() {
   return (
     <footer id="contato" className="relative bg-[#060E1A] pt-16 pb-8">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
@@ -18,15 +19,17 @@ export default function Footer() {
             {/* Brand */}
             <div>
               <div className="mb-4">
-                <img
+                <Image
                   src="/logo-alpha-mech.png"
                   alt="Alpha Mech — Climatização e Refrigeração"
+                  width={128}
+                  height={40}
                   className="h-10 w-auto"
                 />
               </div>
               <p className="text-gray-light text-sm leading-relaxed max-w-xs">
-                Soluções completas em climatização e refrigeração com excelência
-                operacional e conformidade normativa.
+                Climatização e serviços técnicos com excelência operacional,
+                segurança e conformidade normativa.
               </p>
             </div>
 
